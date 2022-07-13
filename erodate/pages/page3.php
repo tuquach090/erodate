@@ -614,32 +614,38 @@
                 <div data-role="tabs">
                     <div class="c-t">
                         <ul>
-                            <li class="visitors active">
+                            <li class="visitors active visitors-item" date-visitors-target="#visitors-data-1">
                                 <a>
                                 <span class="c-t-t">Odwiedzający</span>
                                 <span class="lbl hide">(<span data-role="label"></span>)</span>
                             </a>
                             </li>
-                            <li class="visited"><a><span class="c-t-t">Odwiedzeni</span><span class="lbl hide">(<span
+                            <li class="visited visitors-item" date-visitors-target="#visitors-data-2"><a><span class="c-t-t">Odwiedzeni</span><span class="lbl hide">(<span
                                             data-role="label"></span>)</span></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="visitors">
-                    <div data-role="restrictions"></div>
-                    <div class="profile-search" data-role="visitors"></div>
-                    <div class="clearfix"></div><button data-role="loadmore" class="btn btn-default hide">Pokaż
-                        więcej</button>
-                </div>
+                <div class="visitors active visitors-data" id="visitors-data-1"><div data-role="restrictions"></div><div class="profile-search" data-role="visitors"><div class="no-results">Nie ma odwiedzających użytkowników.</div></div><div class="clearfix"></div><button data-role="loadmore" class="btn btn-default hide">Pokaż więcej</button></div>
+                <div class="visitors visitors-data" id="visitors-data-2"><div data-role="restrictions"></div><div class="profile-search" data-role="visitors"><div class="no-results">Nie ma oglądanych profili.</div></div><div class="clearfix"></div><button data-role="loadmore" class="btn btn-default hide">Pokaż więcej</button></div>
             </div>
         </div>
     </div>
-   <script>
-    let visitors = document.querySelectorAll(".visitors");
-    visitors.forEach((visitor, index) => {
-        visitor.classList.remove("active");
-        visitor.onclick = function (){
-
+    <style>
+        .visitors-data{
+            display: none;
         }
-    })
+        .visitors-data.active {
+            display: block;
+        }
+    </style>
+   <script>
+    $(document).ready(function(){
+        $(document).on("click", ".visitors-item", function () { 
+            $(".visitors-item").removeClass("active");
+            $(".visitors-data").removeClass("active");
+            let visitorsTarget = $(this).attr("date-visitors-target");
+            $(this).addClass("active");
+            $(visitorsTarget).addClass("active");
+         })
+    });
    </script>
