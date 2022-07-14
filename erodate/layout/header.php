@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" href="//s2.erodate.pl/assets/8cbc43d/favicon/erodate-pl-57.png">
     <link rel="apple-touch-icon-precomposed" href="//s2.erodate.pl/assets/8cbc43d/favicon/erodate-pl-57.png">
     <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="assets/css/page2.css">
 
     <script>
         var isMobile = false;
