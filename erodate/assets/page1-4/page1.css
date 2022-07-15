@@ -1,0 +1,157 @@
+.infomations {
+    background: #FFD441;
+    padding: 20px 20px 26px 20px;
+}
+
+.infomation-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.infomation-detail-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infomation-detail-left-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.infomation-detail-left-user h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.infomation-detail-left-user span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #505050;
+    line-height: 17px;
+}
+
+.btn-transfer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 7px;
+}
+
+.btn-transfer .btn-transfer-text label {
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #010101;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 13px;
+    left: 0px;
+    bottom: -1px;
+    background-color: #2BD93D;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #010101;
+}
+
+input:checked+.slider {
+    background-color: #FFE200;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.wallet-voucher {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px black;
+    transform: translate(0, -30%);
+}
+
+.wallet-voucher-item {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.wallet-voucher-line {
+    border-right: 1px solid #888888;
+}
+
+.wallet-voucher-item-icon {
+    width: 50px;
+}
+
+.wallet-voucher-item-info {
+    margin-left: 10px;
+}
+
+.wallet-voucher-item-info h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}

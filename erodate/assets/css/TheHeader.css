@@ -1,0 +1,22 @@
+@import '_var.css';
+#header .header__wp {
+	background: #ffffff;
+	box-shadow: 0pt 2pt 4pt;
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+.hwl__menu {
+	max-height: 50px;
+}
+.--logo {
+	border-radius: var(--fh-border);
+	padding: 0 17.01pt;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--fh-black);
+	font-size: 16pt;
+	color: #f5f1da;
+	text-align: center;
+}
