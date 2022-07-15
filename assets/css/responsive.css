@@ -1,0 +1,125 @@
+@media only screen and (max-width: 1000px) {
+    .wrap-fix {
+        min-width: 780px!important;
+        max-width: 780px!important;
+        margin: 0 auto;
+    }
+    .menu {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrap-fix {
+        min-width: 750px!important;
+        max-width: 750px!important;
+        margin: 0 auto;
+    }
+    #comm-container #comm-cont {
+        width: 60%!important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrap-fix {
+        min-width: 580px!important;
+        max-width: 580px!important;
+        margin: 0 auto;
+    }
+    #comm-tlbx #comm-new-msg {
+        z-index: 1003!important;
+        top: 50%!important;
+        transform: translate(10%, -12%)!important;
+        position: relative!important;
+        right: 0!important;
+    }
+    .new-btn+.dropdown-menu {
+        left: 3%!important;
+        right: auto!important;
+    }
+    .new-btn+.dropdown-menu:before {
+        left: 40px!important;
+    }
+    .c-t.new>ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wob_profile_filter [data-role=filters-primary] .form {
+        display: flex!important;
+        flex-wrap: wrap!important;
+    }
+    .wob_profile_filter [data-role=filters-primary] .form .more button {
+        margin: 31px 0 0!important;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .wrap-fix {
+        max-width: 400px!important;
+        min-width: 400px!important;
+    }
+    #comm-settings [data-role=trash] {
+        margin-right: 10px!important;
+    }
+    #comm-settings #inbox-settings-button {
+        margin-left: 0px!important;
+    }
+    #comm-tlbx>ul:first-child {
+        height: unset!important;
+        display: flex !important;
+        flex-wrap: wrap!important;
+        align-items: center!important;
+    }
+    #comm-tlbx>ul>li.DropView,
+    #comm-tlbx>ul>li.buttons,
+    .wob_communication_conversations [data-role=filters] {
+        transform: unset!important;
+        margin: 5px 0px!important;
+    }
+    #comm-tlbx #comm-new-msg {
+        transform: translate(105%, -112%)!important;
+    }
+    #comm-tlbx>ul>li.DropView {
+        margin-right: 10px!important;
+    }
+    #comm-tlbx>ul>li:last-child {
+        padding-left: 0!important;
+        border: none!important;
+    }
+    #comm-tlbx {
+        max-height: 88px;
+    }
+    .new-btn+.dropdown-menu {
+        right: 0!important;
+        left: auto!important;
+    }
+    #comm-container {
+        top: 141px!important;
+    }
+    #comm-conv .nomessages {
+        display: none;
+    }
+    .just-select-something-please {
+        left: 0;
+    }
+    .wob_profile_filter [data-role=filters-advanced] .clearer {
+        position: relative!important;
+        padding: 10px 20px!important;
+    }
+    .common-toolbox>ul li {
+        margin: 10px!important;
+    }
+    .wob_permission_index .common-toolbox .btn+.btn {
+        margin: 0px 0px 5px!important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .wrap-fix {
+        max-width: 370px!important;
+        min-width: 370px!important;
+    }
+    #comm-tlbx>ul>li.DropView {
+        margin-right: 0px!important;
+    }
+}
